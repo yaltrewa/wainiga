@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wainiga OS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pantalla de inicio -->
+    <div id="login-screen">
+        <div class="login-box">
+            <img src="images/user.png" alt="Usuario" class="user-icon">
+            <h2>Wainiga</h2>
+            <button id="enter-button">Entrar</button>
+        </div>
+    </div>
+
+    <!-- Escritorio -->
+    <div id="desktop" style="display: none;">
+        <div class="desktop-icons">
+            <div class="icon" id="cmd-icon">
+                <img src="images/cmd-icon.png" alt="Terminal">
+                <p>Comunicado</p>
+            </div>
+            <div class="icon" id="cover-icon">
+                <img src="images/cover-icon.png" alt="Portada">
+                <p>Portada</p>
+            </div>
+            <div class="icon" id="folder-icon">
+                <img src="images/folder-icon.png" alt="Adelantos">
+                <p>Adelantos</p>
+            </div>
+            <div class="icon" id="whatsapp-icon">
+                <img src="images/whatsapp-icon.png" alt="WhatsApp">
+                <p>Fans</p>
+            </div>
+        </div>
+        <!-- Ventana modal -->
+        <div id="modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <button class="close-button">&times;</button>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
