@@ -69,7 +69,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: transparent; /* Color sólido */
+    background-color: #004050; /* Color sólido */
     position: relative;
 }
 /* Iconos del escritorio */
