@@ -4,16 +4,11 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #008080; /* Color de respaldo */
-    background-image: url('https://via.placeholder.com/1920x1080'); /* Imagen de fondo */
-    background-repeat: no-repeat; /* Evita que el fondo se repita */
-    background-size: cover; /* Asegúrate de que el fondo cubra toda la pantalla */
-    background-position: center; /* Centra el fondo */
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    background-image: url('images/xp-background.jpg'); /* Imagen de fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
 /* Pantalla de inicio */
