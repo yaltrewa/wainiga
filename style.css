@@ -23,12 +23,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 64, 80, 0.9); /* Fondo semitransparente para superponer */
+    background-color: #004050; /* Color sólido */
 }
 
 .login-box {
     text-align: center;
-    background-color: rgba(0, 96, 96, 0.8); /* Fondo semitransparente */
+    background-color: #006060; /* Color sólido */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -62,16 +62,16 @@ body {
     background-color: #0088cc;
 }
 
+
 /* Escritorio */
 #desktop {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 64, 80, 0.9); /* Fondo semitransparente */
+    background-color: #004050; /* Color sólido */
     position: relative;
 }
-
 /* Iconos del escritorio */
 .desktop-icons {
     display: flex;
