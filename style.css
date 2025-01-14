@@ -3,7 +3,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #008080; /* Fondo tipo Windows XP */
+    background-color: #008080; /* Color de respaldo */
+    background-image: url('images/xp-background.jpg'); /* Imagen de fondo */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    background-size: cover; /* Asegúrate de que el fondo cubra toda la pantalla */
+    background-position: center; /* Centra el fondo */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -19,12 +23,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #004050; /* Fondo de la pantalla de inicio */
+    background-color: rgba(0, 64, 80, 0.9); /* Fondo semitransparente para superponer */
 }
 
 .login-box {
     text-align: center;
-    background-color: #006060;
+    background-color: rgba(0, 96, 96, 0.8); /* Fondo semitransparente */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -64,10 +68,11 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #004050; /* Fondo del escritorio */
+    background-color: rgba(0, 64, 80, 0.9); /* Fondo semitransparente */
     position: relative;
 }
 
+/* Iconos del escritorio */
 .desktop-icons {
     display: flex;
     flex-wrap: wrap;
