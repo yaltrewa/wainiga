@@ -1,108 +1,153 @@
-/* Estilos generales */
-body, html {
+/* General styles */
+body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #008080; /* Fondo tipo Windows XP */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     overflow: hidden;
-    font-family: 'Arial', sans-serif;
 }
 
 /* Pantalla de inicio */
 #login-screen {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    background: url('images/xp-background.jpg') no-repeat center center;
-    background-size: cover;
-    position: relative;
+    background-color: #004050; /* Fondo de la pantalla de inicio */
 }
 
-#login-box {
-    background-color: rgba(255, 255, 255, 0.8);
+.login-box {
+    text-align: center;
+    background-color: #006060;
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-#login-box img {
-    width: 100px; /* Ajusta el tamaño aquí */
-    height: 100px; /* Ajusta el tamaño aquí */
+.user-icon {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin-bottom: 20px;
-    object-fit: cover; /* Asegura que la imagen no se distorsione */
+    margin-bottom: 15px;
 }
 
-#login-box h1 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
+.login-box h2 {
+    margin: 0;
+    font-size: 24px;
 }
 
-#login-box button {
+#enter-button {
+    margin-top: 15px;
     padding: 10px 20px;
-    background-color: #0078d7;
-    color: white;
+    background-color: #00aaff;
     border: none;
-    border-radius: 5px;
+    color: #fff;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-#login-box button:hover {
-    background-color: #005bb5;
+#enter-button:hover {
+    background-color: #0088cc;
 }
 
 /* Escritorio */
 #desktop {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 10px;
     width: 100%;
     height: 100%;
-    background: url('images/xp-background.jpg') no-repeat center center;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-color: #004050; /* Fondo del escritorio */
     position: relative;
 }
 
-/* Íconos del escritorio */
-.icon {
+.desktop-icons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    width: 80px;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.icon {
     text-align: center;
-    color: white;
-    text-shadow: 1px 1px 2px black;
+    width: 100px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .icon img {
     width: 64px;
     height: 64px;
     margin-bottom: 5px;
-    transition: transform 0.3s ease;
 }
 
-.icon:hover img {
-    transform: scale(1.1);
+.icon p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
 }
 
-.icon span {
-    font-size: 12px;
-    margin-top: 5px;
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#login-box img {
-    max-width: 100px;
-    max-height: 100px;
-    width: auto;
-    height: auto;
+
+.modal-content {
+    background-color: #006060;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.close-button:hover {
+    transform: scale(1.2);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .icon {
+        width: 80px;
+    }
+
+    .icon img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .icon p {
+        font-size: 12px;
+    }
 }
 
