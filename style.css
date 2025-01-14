@@ -1,19 +1,27 @@
 /* General styles */
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    height: 100%; /* Garantiza que el fondo cubra todo el viewport */
     background-color: #008080; /* Color de respaldo */
     background-image: url('images/xp-background.jpg'); /* Imagen de fondo */
     background-repeat: no-repeat; /* Evita que el fondo se repita */
     background-size: cover; /* Asegúrate de que el fondo cubra toda la pantalla */
     background-position: center; /* Centra el fondo */
+    overflow: hidden;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+}
+
+/* Reglas específicas para móviles */
+@media (max-width: 768px) {
+    html, body {
+        background-size: auto; /* Ajusta el tamaño del fondo para móviles */
+        background-attachment: fixed; /* Fija el fondo para evitar el desplazamiento */
+    }
 }
 
 /* Pantalla de inicio */
