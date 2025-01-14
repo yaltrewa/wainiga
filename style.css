@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: transparent; /* Color de respaldo */
-    background-image: url('images/xp-background.jpg'); /* Imagen de fondo */
+    background-color: red; /* Temporal */
+    background-image: none;
     background-repeat: no-repeat; /* Evita que el fondo se repita */
     background-size: cover; /* Asegúrate de que el fondo cubra toda la pantalla */
     background-position: center; /* Centra el fondo */
