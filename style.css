@@ -8,7 +8,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Altura mínima para asegurar que ocupe toda la pantalla */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos internos se posicionen verticalmente */
 }
 
 /* Pantalla de inicio */
@@ -18,12 +20,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #004050; /* Color sólido */
+    background-color: transparent; /* Transparente para usar el fondo del body */
 }
 
 .login-box {
     text-align: center;
-    background-color: #006060; /* Color sólido */
+    background-color: rgba(0, 64, 80, 0.8); /* Fondo semitransparente */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -39,6 +41,7 @@ body {
 .login-box h2 {
     margin: 0;
     font-size: 24px;
+    color: #fff; /* Asegura que el texto sea legible */
 }
 
 #enter-button {
@@ -57,22 +60,30 @@ body {
     background-color: #0088cc;
 }
 
-
 /* Escritorio */
 #desktop {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #004050; /* Color sólido */
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Transparente para usar el fondo del body */
     position: relative;
 }
+
 /* Iconos del escritorio */
 .desktop-icons {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: flex-start; /* Alinea los íconos al inicio */
     gap: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
+    background-color: transparent; /* Transparente para usar el fondo del body */
 }
 
 .icon {
@@ -108,7 +119,7 @@ body {
 }
 
 .modal-content {
-    background-color: #006060;
+    background-color: rgba(0, 64, 80, 0.9); /* Fondo semitransparente */
     padding: 20px;
     border-radius: 10px;
     width: 80%;
