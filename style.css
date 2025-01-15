@@ -159,4 +159,43 @@ body {
         font-size: 12px;
     }
 }
+/* Barra de tareas */
+#taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333; /* Color oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
 
+.taskbar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.taskbar-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.taskbar-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Reloj */
+#clock {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
