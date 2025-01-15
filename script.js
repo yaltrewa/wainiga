@@ -54,6 +54,14 @@ folderIcon.addEventListener('click', () => {
     `);
 });
 
-whatsappIcon.addEventListener('click', () => {
-    window.open('https://wa.me/<tu-numero-de-whatsapp>?text=¡Hola!%20Quiero%20ser%20parte%20del%20grupo%20de%20fans%20de%20Wainiga.', '_blank');
-});
+// Función para actualizar el reloj en la barra de tareas
+function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    document.getElementById('clock').textContent = `${hours}:${minutes}`;
+}
+
+// Actualizar el reloj cada segundo
+setInterval(updateClock, 1000);
+updateClock(); // Iniciar de inmediato
