@@ -29,25 +29,24 @@ body {
 
 .login-box {
     text-align: center;
-    background-color: rgba(0, 96, 96, 0.8); /* Fondo semitransparente */
-    padding: 40px; /* Aumenta el tamaño del recuadro */
-    border-radius: 15px; /* Bordes más redondeados */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Sombra más pronunciada */
-    max-width: 400px; /* Define un ancho máximo */
-    width: 100%; /* Asegura que se ajuste al contenedor */
+    padding: 0; /* Sin padding */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    box-shadow: none; /* Sin sombra */
 }
 
 .user-icon {
-    width: 120px; /* Incrementa el tamaño del ícono */
-    height: 120px;
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 2px solid #fff; /* Añade un borde blanco para destacar */
+    border: 2px solid #fff; /* Borde blanco opcional */
 }
 
 .login-box h2 {
     margin: 10px 0;
-    font-size: 28px; /* Texto más grande */
+    font-size: 24px; /* Ajusta el tamaño del texto */
+    color: #fff; /* Color del texto */
 }
 
 #enter-button {
