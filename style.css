@@ -166,12 +166,12 @@ body {
     left: 0;
     width: 100%;
     height: 50px;
-    background-color: #0078D7; /* Color oscuro */
+    background: linear-gradient(to top, #1a1a1a, #333, #666); /* Degradado para efecto de relieve */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar más profundidad */
     z-index: 1000;
 }
 
