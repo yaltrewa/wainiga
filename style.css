@@ -166,12 +166,12 @@ body {
     left: 0;
     width: 100%;
     height: 50px;
-    background: linear-gradient(to top, #003b7a, #005cae, #0078d7); /* Degradado para efecto de relieve */
+    background: linear-gradient(to top, #003b7a, #005cae, #0078d7); /* Degradado XP */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Espaciado entre botón de inicio y reloj */
     align-items: center;
-    padding: 0 20px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar más profundidad */
+    padding: 0 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
@@ -191,6 +191,30 @@ body {
 .taskbar-item p {
     margin: 0;
     font-size: 14px;
+}
+/* Botón de inicio */
+#start-button {
+    display: flex;
+    align-items: center;
+    background-color: #0078d7; /* Color azul similar a XP */
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #005cae;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    gap: 5px;
+    transition: background-color 0.2s ease;
+}
+
+#start-button:hover {
+    background-color: #005cae; /* Color más oscuro al pasar el cursor */
+}
+
+#start-button img {
+    width: 20px;
+    height: 20px;
 }
 
 /* Reloj */
