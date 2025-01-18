@@ -225,6 +225,14 @@ body {
     color: #fff;
     margin-right: 70px; /* Margen derecho para evitar que se corte */
 }
+/* Contenedor que envuelve al reproductor de SoundCloud */
+#reproductor-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea el reproductor a la derecha */
+    margin: 20px; /* Espaciado alrededor del reproductor */
+}
+
+/* Reproductor de SoundCloud */
 #soundcloud-player {
     display: block; /* Asegurarse que el contenedor sea un bloque */
     width: 60%; /* O el tamaño que desees */
@@ -233,6 +241,7 @@ body {
     margin-top: 20px; /* Opcional, solo para darle algo de espacio arriba */
 }
 
+/* Ajusta el iframe dentro del reproductor */
 #soundcloud-player iframe {
     width: 100%; /* Asegura que el iframe ocupe todo el contenedor */
     height: 450px; /* Ajusta la altura si lo necesitas */
