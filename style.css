@@ -85,18 +85,19 @@ body {
 }
 
 .icon {
-    text-align: center;
-    width: 100px;
-    cursor: pointer;
-    user-select: none;
+    width: 100px; /* Ancho uniforme para todos los iconos */
+    height: 100px; /* Alto uniforme para todos los iconos */
+    display: flex; /* Centrar contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    margin: 0 auto; /* Centrado automático */
 }
 
 .icon img {
-    width: 64px; /* Tamaño uniforme como los demás iconos */
-    height: auto; /* Ajusta la altura para mantener la proporción */
-    max-height: 64px; /* Limita la altura máxima */
-    margin: 0 auto; /* Centra la imagen dentro del contenedor */
-    display: block; /* Se comporta como un bloque para centrado */
+    max-width: 80px; /* Ancho máximo para las imágenes */
+    max-height: 80px; /* Alto máximo para las imágenes */
+    height: auto; /* Mantener proporciones */
+    width: auto; /* Mantener proporciones */
 }
 
 .icon p {
