@@ -226,3 +226,10 @@ body {
     color: #fff;
     margin-right: 70px; /* Margen derecho para evitar que se corte */
 }
+iframe {
+    position: absolute;  /* Permite moverlo libremente */
+    top: 100px;          /* Distancia desde el borde superior de su contenedor */
+    left: 50%;           /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Ajusta para que quede perfectamente centrado */
+}
+
