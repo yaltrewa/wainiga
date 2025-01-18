@@ -168,9 +168,9 @@ body {
     height: 50px;
     background: linear-gradient(to top, #003b7a, #005cae, #0078d7); /* Degradado XP */
     display: flex;
-    justify-content: space-between; /* Espaciado entre botón de inicio y reloj */
+    justify-content: space-between; /* Espaciado entre elementos */
     align-items: center;
-    padding: 0 10px;
+    padding: 0 15px; /* Ajusta el padding lateral */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
@@ -204,7 +204,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 14px;
     cursor: pointer;
-    gap: 5px;
+    gap: 8px; /* Espaciado entre ícono y texto */
     transition: background-color 0.2s ease;
 }
 
@@ -213,8 +213,9 @@ body {
 }
 
 #start-button img {
-    width: 20px;
-    height: 20px;
+    width: 24px; /* Ajusta el tamaño del ícono */
+    height: 24px;
+    object-fit: contain; /* Mantiene las proporciones de la imagen */
 }
 
 /* Reloj */
@@ -222,4 +223,5 @@ body {
     font-family: 'Arial', sans-serif;
     font-size: 14px;
     color: #fff;
+    margin-right: 20px; /* Margen derecho para evitar que se corte */
 }
