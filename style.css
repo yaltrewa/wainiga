@@ -92,9 +92,11 @@ body {
 }
 
 .icon img {
-    width: 80px;
-    height: 64px;
-    margin-bottom: 5px;
+    width: 64px; /* Tamaño uniforme como los demás iconos */
+    height: auto; /* Ajusta la altura para mantener la proporción */
+    max-height: 64px; /* Limita la altura máxima */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    display: block; /* Se comporta como un bloque para centrado */
 }
 
 .icon p {
