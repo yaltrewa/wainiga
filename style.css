@@ -159,7 +159,6 @@ body {
         font-size: 12px;
     }
 }
-
 /* Barra de tareas */
 #taskbar {
     position: fixed;
@@ -193,7 +192,6 @@ body {
     margin: 0;
     font-size: 14px;
 }
-
 /* Botón de inicio */
 #start-button {
     display: flex;
@@ -227,7 +225,6 @@ body {
     color: #fff;
     margin-right: 70px; /* Margen derecho para evitar que se corte */
 }
-
     color: #fff;
     margin-right: 70px; /* Margen derecho para evitar que se corte */
 }
