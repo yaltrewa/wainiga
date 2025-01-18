@@ -85,19 +85,17 @@ body {
 }
 
 .icon {
-    width: 100px; /* Ancho uniforme para todos los iconos */
-    height: 100px; /* Alto uniforme para todos los iconos */
-    display: flex; /* Centrar contenido */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
-    margin: 0 auto; /* Centrado automático */
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .icon img {
-    max-width: 80px; /* Ancho máximo para las imágenes */
-    max-height: 80px; /* Alto máximo para las imágenes */
-    height: auto; /* Mantener proporciones */
-    width: auto; /* Mantener proporciones */
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
+}
 }
 
 .icon p {
