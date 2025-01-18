@@ -96,7 +96,6 @@ body {
     height: 64px;
     margin-bottom: 5px;
 }
-}
 
 .icon p {
     margin: 0;
@@ -160,6 +159,7 @@ body {
         font-size: 12px;
     }
 }
+
 /* Barra de tareas */
 #taskbar {
     position: fixed;
@@ -193,6 +193,7 @@ body {
     margin: 0;
     font-size: 14px;
 }
+
 /* Botón de inicio */
 #start-button {
     display: flex;
@@ -223,6 +224,10 @@ body {
 #clock {
     font-family: 'Arial', sans-serif;
     font-size: 14px;
+    color: #fff;
+    margin-right: 70px; /* Margen derecho para evitar que se corte */
+}
+
     color: #fff;
     margin-right: 70px; /* Margen derecho para evitar que se corte */
 }
