@@ -225,6 +225,13 @@ body {
     color: #fff;
     margin-right: 70px; /* Margen derecho para evitar que se corte */
 }
+#soundcloud-player {
+    display: block;  /* Asegúrate de que se muestre */
+    margin: 20px auto;  /* Da espacio arriba y abajo, y lo centra horizontalmente */
+    padding-right: 20px;  /* Da espacio desde el margen derecho */
+    width: 80%;  /* Puedes ajustar el ancho si es necesario */
+    position: relative; /* Asegura que no esté pegado al borde */
+}
     color: #fff;
     margin-right: 70px; /* Margen derecho para evitar que se corte */
 }
