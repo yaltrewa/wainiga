@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: none; /* Temporal */
     background-image: url('images/xp-background.jpg'); /* Imagen de fondo */
     background-repeat: no-repeat; /* Evita que el fondo se repita */
     background-size: cover; /* Asegúrate de que el fondo cubra toda la pantalla */
@@ -225,26 +224,24 @@ body {
     color: #fff;
     margin-right: 70px; /* Margen derecho para evitar que se corte */
 }
+
 /* Contenedor que envuelve al reproductor de SoundCloud */
 #reproductor-container {
     display: flex;
     justify-content: flex-end; /* Alinea el reproductor a la derecha */
-    margin: 20px; /* Espaciado alrededor del reproductor */
+    align-items: center; /* Centra el reproductor verticalmente */
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Distancia del borde derecho */
+    transform: translateY(-50%); /* Centra el reproductor verticalmente */
 }
 
 /* Reproductor de SoundCloud */
 #soundcloud-player {
     display: block; /* Asegurarse que el contenedor sea un bloque */
-    width: 60%; /* O el tamaño que desees */
-    margin: 0 auto; /* Centra el reproductor horizontalmente */
-    padding-right: 20px; /* Evitar que esté pegado al margen */
-    margin-top: 20px; /* Opcional, solo para darle algo de espacio arriba */
-}
-
-/* Ajusta el iframe dentro del reproductor */
-#soundcloud-player iframe {
-    width: 100%; /* Asegura que el iframe ocupe todo el contenedor */
-    height: 450px; /* Ajusta la altura si lo necesitas */
-    border: none; /* Elimina los bordes del iframe */
+    width: 400px; /* Ajusta el tamaño */
+    max-width: 90%; /* Garantiza que no exceda el ancho de la pantalla */
+    height: 120px;
+    border: none; /* Elimina los bordes */
 }
 
