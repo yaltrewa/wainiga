@@ -1,72 +1,230 @@
-/* GENERAL */
+/* General styles */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url('https://i.imgur.com/B58jQNu.jpg') no-repeat center center fixed;
-  background-size: cover;
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: none; /* Temporal */
+    background-image: url('images/xp-background.jpg'); /* Imagen de fondo */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    background-size: cover; /* Asegúrate de que el fondo cubra toda la pantalla */
+    background-position: center; /* Centra el fondo */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* ICONOS */
+/* Pantalla de inicio */
+#login-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    backdrop-filter: blur(10px); /* Desenfoque del fondo */
+}
+
+.login-box {
+    text-align: center;
+    padding: 0; /* Sin padding */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    box-shadow: none; /* Sin sombra */
+}
+
+.user-icon {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #fff; /* Borde blanco opcional */
+}
+
+.login-box h2 {
+    margin: 10px 0;
+    font-size: 24px; /* Ajusta el tamaño del texto */
+    color: #fff; /* Color del texto */
+}
+
+#enter-button {
+    margin-top: 20px;
+    padding: 12px 25px; /* Botón más grande */
+    background-color: #00aaff;
+    border: none;
+    color: #fff;
+    font-size: 18px; /* Incrementa el tamaño del texto */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#enter-button:hover {
+    background-color: #0088cc;
+    transform: scale(1.05); /* Efecto al pasar el cursor */
+}
+
+/* Escritorio */
+#desktop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent; /* Color sólido */
+    position: relative;
+}
+
+/* Iconos del escritorio */
+.desktop-icons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
 .icon {
-  width: 80px;
-  height: 80px;
-  margin: 10px;
-  display: inline-block;
-  text-align: center;
-  cursor: pointer;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    user-select: none;
 }
+
 .icon img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.icon span {
-  display: block;
-  font-size: 14px;
-  color: #fff;
-  margin-top: 5px;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
 }
 
-.icon:hover span {
-  color: #00bfff;
+.icon p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
 }
 
-/* BARRA DE TAREAS */
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #006060;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.close-button:hover {
+    transform: scale(1.2);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .icon {
+        width: 80px;
+    }
+
+    .icon img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .icon p {
+        font-size: 12px;
+    }
+}
+/* Barra de tareas */
 #taskbar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background-color: #0078d7;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #003b7a, #005cae, #0078d7); /* Degradado XP */
+    display: flex;
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center;
+    padding: 0 15px; /* Ajusta el padding lateral */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-#taskbar .start {
-  width: 120px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+.taskbar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    cursor: pointer;
 }
 
-#taskbar .start img {
-  width: 30px;
-  height: auto;
+.taskbar-item img {
+    width: 24px;
+    height: 24px;
 }
 
-#taskbar .clock {
-  margin-right: 15px;
-  color: #fff;
+.taskbar-item p {
+    margin: 0;
+    font-size: 14px;
+}
+/* Botón de inicio */
+#start-button {
+    display: flex;
+    align-items: center;
+    background-color: #0078d7; /* Color azul similar a XP */
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #005cae;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    gap: 8px; /* Espaciado entre ícono y texto */
+    transition: background-color 0.2s ease;
+}
+
+#start-button:hover {
+    background-color: #005cae; /* Color más oscuro al pasar el cursor */
+}
+
+#start-button img {
+    width: 24px; /* Ajusta el tamaño del ícono */
+    height: 24px;
+    object-fit: contain; /* Mantiene las proporciones de la imagen */
+}
+
+/* Reloj */
+#clock {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 70px; /* Margen derecho para evitar que se corte */
+}
   font-size: 16px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
