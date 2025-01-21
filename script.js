@@ -65,22 +65,3 @@ function updateClock() {
 // Actualizar el reloj cada segundo
 setInterval(updateClock, 1000);
 updateClock(); // Iniciar de inmediato
-// Esperamos que el contenido de la página se haya cargado completamente
-document.addEventListener("DOMContentLoaded", function() {
-    // Seleccionamos los elementos necesarios
-    const enterButton = document.getElementById("enter-button");
-    const soundcloudPlayer = document.getElementById("soundcloud-player");
-    const loginScreen = document.getElementById("login-screen");
-
-    // Inicialmente el reproductor está oculto
-    soundcloudPlayer.style.display = "none";
-
-    // Cuando el botón "Entrar" se hace clic
-    enterButton.addEventListener("click", function() {
-        // Ocultamos la pantalla de inicio
-        loginScreen.style.display = "none";
-        
-        // Mostramos el reproductor de SoundCloud
-        soundcloudPlayer.style.display = "block";
-    });
-});
