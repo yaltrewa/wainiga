@@ -228,4 +228,34 @@ body {
   font-size: 16px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
+/* Estilo para el contenedor del reproductor */
+.soundcloud-player-container {
+  position: fixed; /* Fija el reproductor en la página */
+  top: 50%; /* Centra el reproductor verticalmente */
+  right: 20px; /* Lo posiciona a la derecha con un margen de 20px */
+  transform: translateY(-50%); /* Ajusta la posición para que quede perfectamente centrado */
+  z-index: 999; /* Asegura que el reproductor quede encima de otros elementos */
+  width: 350px; /* Tamaño del reproductor (se puede ajustar a tu preferencia) */
+  max-width: 100%; /* Hace que no se desborde en pantallas pequeñas */
+}
+
+/* Ajusta el iframe dentro del contenedor */
+.soundcloud-player-container iframe {
+  width: 100%; /* Hace que el iframe ocupe todo el ancho disponible en el contenedor */
+  height: 450px; /* Establece una altura fija (puedes modificarla si lo deseas) */
+}
+
+/* Estilo para el enlace que aparece debajo del reproductor */
+.soundcloud-player-container div {
+  font-size: 10px;
+  color: #cccccc;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-weight: 100;
+  text-align: center; /* Centra el texto del enlace */
+}
 
