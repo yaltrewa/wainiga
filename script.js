@@ -9,6 +9,7 @@ const whatsappIcon = document.getElementById('whatsapp-icon');
 const modal = document.getElementById('modal');
 const modalBody = document.getElementById('modal-body');
 const closeButton = document.querySelector('.close-button');
+const clock = document.getElementById('clock');
 
 // Función para mostrar el escritorio
 enterButton.addEventListener('click', () => {
@@ -50,8 +51,6 @@ window.addEventListener('click', (event) => {
         modal.style.display = 'none';
     }
 });
-// Referencias a elementos
-const clock = document.getElementById('clock');
 
 // Función para actualizar el reloj
 function updateClock() {
