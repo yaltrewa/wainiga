@@ -27,41 +27,27 @@ closeButton.addEventListener('click', () => {
     modal.style.display = 'none';
 });
 
-// Acciones de los íconos del escritorio
+// Eventos para los iconos del escritorio
 cmdIcon.addEventListener('click', () => {
-    showModal(`
-        <h2>Comunicado</h2>
-        <p>Bienvenidos al sistema operativo Wainiga OS.</p>
-        <p>El EP "Nombre del EP" estará disponible en febrero.</p>
-    `);
+    showModal('<h2>Comunicado</h2><p>Aquí puedes escribir un mensaje para los usuarios.</p>');
 });
 
 coverIcon.addEventListener('click', () => {
-    showModal(`
-        <h2>Portada</h2>
-        <img src="images/cover.jpg" alt="Portada del EP" style="width: 100%; height: auto;">
-    `);
+    showModal('<h2>Portada</h2><p>Muestra la portada de tu próximo proyecto o contenido.</p>');
 });
 
 folderIcon.addEventListener('click', () => {
-    showModal(`
-        <h2>Adelantos</h2>
-        <p>Próximamente encontrarás aquí los videos de adelanto del EP.</p>
-        <video controls style="width: 100%; height: auto;">
-            <source src="videos/sample.mp4" type="video/mp4">
-            Tu navegador no soporta reproducción de video.
-        </video>
-    `);
+    showModal('<h2>Adelantos</h2><p>Explora los adelantos de tu trabajo o nuevos lanzamientos.</p>');
 });
 
-// Función para actualizar el reloj en la barra de tareas
-function updateClock() {
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    document.getElementById('clock').textContent = `${hours}:${minutes}`;
-}
+whatsappIcon.addEventListener('click', () => {
+    showModal('<h2>Fans</h2><p>Conéctate con tus fans a través de WhatsApp.</p>');
+});
 
-// Actualizar el reloj cada segundo
-setInterval(updateClock, 1000);
-updateClock(); // Iniciar de inmediato
+// Cerrar modal si se hace clic fuera del contenido
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
