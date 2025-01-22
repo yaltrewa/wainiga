@@ -118,7 +118,7 @@ z-index: 1000; /* Aumenta este valor */
 }
 
 .modal-content {
-    background-color: #006060;
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     width: 80%;
