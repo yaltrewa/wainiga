@@ -30,7 +30,7 @@ closeButton.addEventListener('click', () => {
 
 // Eventos para los iconos del escritorio
 cmdIcon.addEventListener('click', () => {
-    showModal('<h2>Comunicado</h2><p>Comunicado</p>');
+    showModal('<h2>Comunicado</h2><p>Aquí puedes escribir un mensaje para los usuarios.</p>');
 });
 
 coverIcon.addEventListener('click', () => {
