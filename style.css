@@ -144,7 +144,15 @@ z-index: 1000; /* Aumenta este valor */
 .close-button:hover {
     transform: scale(1.2);
 }
-
+/* Estilo para el cuerpo del modal, donde va el contenido */
+.modal-body {
+    max-height: 70vh; /* Ajusta la altura máxima del contenido del modal */
+    overflow-y: auto; /* Activa el scroll vertical si el contenido excede */
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 16px; /* Ajusta el tamaño de la fuente si lo deseas */
+    line-height: 1.6; /* Mejor lectura */
+}
 /* Ajustes responsivos */
 @media (max-width: 768px) {
     .icon {
