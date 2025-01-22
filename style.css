@@ -273,3 +273,9 @@ z-index: 1000; /* Aumenta este valor */
     height: 250px; /* Reduce la altura proporcionalmente */
   }
 }
+#modal-body {
+    max-height: 70vh;  /* Ajusta esta altura según sea necesario */
+    overflow-y: auto;  /* Activa la barra de desplazamiento vertical */
+    padding-right: 10px;  /* Espacio para que la barra de desplazamiento no se solape con el texto */
+}
+
