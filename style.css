@@ -262,7 +262,7 @@ z-index: 1000; /* Aumenta este valor */
 @media (max-width: 768px) {
   .soundcloud-player-container {
     position: absolute; /* Cambiar de fixed a absolute para que no se superponga a la barra de tareas */
-    top: 10%; /* Ajusta la posición vertical para que quede debajo de los iconos */
+    top: 25%; /* Ajusta la posición vertical para que quede debajo de los iconos */
     left: 50%; /* Centra el reproductor horizontalmente */
     transform: translateX(-50%) translateY(-50%); /* Asegura que se mantenga centrado */
     width: 90%; /* Ocupa el 90% del ancho disponible */
