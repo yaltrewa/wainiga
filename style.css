@@ -266,7 +266,7 @@ z-index: 1000; /* Aumenta este valor */
     bottom: 10%; /* Ajusta la distancia desde la parte inferior (10% del viewport) */
     left: 50%; /* Lo mueve al centro horizontalmente */
     transform: translateX(-50%); /* Compensa el 50% del ancho del reproductor para centrarlo */
-    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+    z-index: 999; /* Asegúrate de que esté encima de otros elementos */
   }
 
   .soundcloud-player-container iframe {
