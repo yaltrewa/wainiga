@@ -50,7 +50,7 @@ coverIcon.addEventListener('click', () => {
 folderIcon.addEventListener('click', () => {
     // Mostrar el texto
     const textContent = `
-        <h2>Adelantos</h2>
+        <h2>???</h2>
         <p>Explora los adelantos de tu trabajo o nuevos lanzamientos.</p>
     `;
     
