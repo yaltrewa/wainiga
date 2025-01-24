@@ -64,8 +64,12 @@
         </div>
         <!-- Ventana modal -->
         <div id="modal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <button class="close-button">&times;</button>
+    <div class="modal-content">
+        <button class="close-button" onclick="cerrarModal()">&times;</button>
+        <!-- Aquí se cargará la imagen ampliada -->
+        <img id="modal-image" src="" alt="Imagen ampliada" style="max-width: 100%; height: auto; border-radius: 10px;">
+    </div>
+</div>
                 <div id="modal-body"></div>
             </div>
         </div>
