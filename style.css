@@ -353,3 +353,12 @@ window.onclick = function(event) {
     videoModal.style.display = "none";
   }
 }
+/* Asegúrate de que el icono de portada sea visible y tenga un tamaño adecuado en móviles */
+@media only screen and (max-width: 768px) {
+    .cover-icon {
+        display: block;  /* Asegura que el icono esté visible */
+        width: 60px;  /* Ajusta el tamaño del icono */
+        height: 60px;
+        margin: 10px auto;  /* Centramos el icono si es necesario */
+    }
+}
