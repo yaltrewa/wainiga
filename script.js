@@ -37,7 +37,8 @@ cmdIcon.addEventListener('click', () => {
         <p>El año pasado, en un intento de llenar ese vacío, traté de demostrarles que, a pesar de haber estado tanto tiempo alejado, seguía hecho para esto. Publiqué algunos singles y me enfoqué en un álbum nuevo. Sin embargo, por cosas de la vida, pocos de esos proyectos llegaron a completarse, y otros los lancé sin estar realmente convencido. Hasta que llegó un punto en el que ya no entendía qué estaba haciendo. ¿A quién debía demostrarle que estoy hecho para esto? ¿Quién iba a confiar en mí si yo mismo no lo hacía?</p>
         <p>Fue en medio de esas noches interminables, dando vueltas a estas preguntas en mi cabeza, cuando tomé una respiración profunda. De repente, el tiempo se detuvo, las voces se callaron... y, por un momento, dejé de ser yo. Dejé de ser "Trewa."</p>
         <p>Volví a conectar con ese pibe de 16 años que viajaba por cualquier parte de Buenos Aires sin importar cómo iba a volver. Ese pibe que no pensaba en lo que podía ganar, que grababa con un micrófono barato, con instrumentales de YouTube, y subía videos hechos con un celular. Ese pibe que disfrutaba lo que hacía, sin preocuparse por lo que los demás opinaban, porque sabía que la única persona a la que tenía que demostrarle algo era a sí mismo.</p>
-        <p>A veces, para encontrarte, tenés que volver al punto de partida. Hoy, vuelvo a hacer música por el mismo motivo que la empecé: por mí. Gracias por ser parte de este viaje. Lo mejor está por venir.</p>
+        <p>A veces, para encontrarte, tenés que volver al punto de partida. Hoy, vuelvo a hacer música por el mismo motivo que la empecé: por mí. Gracias por ser parte de este viaje. Lo mejor está por venir.
+        -Att:Wainiga</p>
     `;
     showModal(comunicado);
 });
