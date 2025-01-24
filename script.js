@@ -73,7 +73,7 @@ folderIcon.addEventListener('click', () => {
 });
 
 whatsappIcon.addEventListener('click', () => {
-    showModal('<h2>Fans</h2><p>Conéctate con tus fans a través de WhatsApp.</p>');
+    showModal('<h2>WhatsApp</h2><p>Conéctate con tus fans a través de WhatsApp.</p>');
 });
 
 // Cerrar modal si se hace clic fuera del contenido
