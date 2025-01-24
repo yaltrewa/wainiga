@@ -73,4 +73,14 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 60000); // Actualiza cada 60 segundos
 
+// Función para mostrar la imagen de portada en grande
+coverIcon.addEventListener('click', () => {
+    // Creamos el contenido de la imagen en el modal
+    const imageContent = `<h2>Portada</h2>
+                          <img src="images/cover-icon.png" alt="Portada" class="large-image">`;
+    
+    // Llamamos a la función para mostrar el modal con la imagen
+    showModal(imageContent);
+});
+
 
