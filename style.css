@@ -278,4 +278,12 @@ z-index: 1000; /* Aumenta este valor */
     overflow-y: auto;  /* Activa la barra de desplazamiento vertical */
     padding-right: 10px;  /* Espacio para que la barra de desplazamiento no se solape con el texto */
 }
+/* Estilos para la imagen grande en el modal */
+.large-image {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho disponible */
+    max-width: 600px; /* Limita el tamaño máximo de la imagen */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    display: block;
+    margin: 0 auto; /* Centra la imagen dentro del modal */
+}
 
