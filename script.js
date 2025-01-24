@@ -48,7 +48,28 @@ coverIcon.addEventListener('click', () => {
 });
 
 folderIcon.addEventListener('click', () => {
-    showModal('<h2>Adelantos</h2><p>Explora los adelantos de tu trabajo o nuevos lanzamientos.</p>');
+    // Mostrar el texto
+    const textContent = `
+        <h2>Adelantos</h2>
+        <p>Explora los adelantos de tu trabajo o nuevos lanzamientos.</p>
+    `;
+    
+    // Mostrar el contenido de texto
+    showModal(textContent);
+
+    // Mostrar la lista de videos (esto se agrega después del texto)
+    const videoModalContent = `
+        <h2>Selecciona un Video</h2>
+        <ul id="videoList">
+            <li class="video-item" data-video-url="url_del_video_1">Video 1</li>
+            <li class="video-item" data-video-url="url_del_video_2">Video 2</li>
+            <li class="video-item" data-video-url="url_del_video_3">Video 3</li>
+        </ul>
+        <div id="videoPlayer"></div>
+    `;
+
+    // Mostrar el modal con la lista de videos
+    showModal(videoModalContent);
 });
 
 whatsappIcon.addEventListener('click', () => {
