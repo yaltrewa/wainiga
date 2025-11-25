@@ -39,27 +39,64 @@
 </div>
         </div>
 
-<div class="soundcloud-player-container">
-  <!-- Reproductor centrado a la derecha, más abajo -->
-  <div style="display: flex; justify-content: flex-end; padding-right: 20px; position: fixed; top: 100px; right: 0; z-index: 10; width: auto; height: 450px;">
-    
-    <iframe 
-      width="80%" 
-      height="450" 
-      src="https://www.youtube.com/embed/videoseries?si=_R47-ruT2MKQ7dOd&list=PLouZPoJjRosoIvS7A9lVF36fEbSNIZ-Tk" 
-      title="YouTube playlist player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowfullscreen>
-    </iframe>
+<!-- START: Ventanas de remeras -->
+<section id="remeras-desktop">
+  <div class="remera-window" data-model="Wainiga's BIG LOGO Boxyfit" data-slots="3">
+    <div class="titlebar">Wainiga's BIG LOGO Boxyfit</div>
+    <div class="window-body">
+      <div class="carousel" data-window="boxy">
+        <!-- slides: 2 imágenes + 1 video (reemplazá rutas) -->
+        <div class="slide"><img src="assets/boxy-1.jpg" alt="Boxy - 1"></div>
+        <div class="slide"><img src="assets/boxy-2.jpg" alt="Boxy - 2"></div>
+        <div class="slide"><video src="assets/boxy-video.mp4" playsinline muted loop></video></div>
 
+        <button class="nav prev" aria-label="Anterior">‹</button>
+        <button class="nav next" aria-label="Siguiente">›</button>
+      </div>
+
+      <div class="controls">
+        <label>Talle
+          <select class="size-select">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </label>
+        <button class="btn-whatsapp">Pedir por WhatsApp</button>
+      </div>
+    </div>
   </div>
 
-  <!-- Texto debajo del reproductor -->
-  <div style="display: flex; justify-content: flex-end; padding-right: 50px; position: fixed; top: 550px; right: 0; z-index: 10; font-size: 10px; color: #cccccc; font-family: Arial, sans-serif;">
-    <a href="https://www.youtube.com/playlist?list=PLouZPoJjRosoIvS7A9lVF36fEbSNIZ-Tk" target="_blank" style="color: #cccccc; text-decoration: none;">Ver playlist en YouTube</a>
+  <div class="remera-window" data-model="Wainiga´s BIG LOGO Oversize" data-slots="3">
+    <div class="titlebar">Wainiga´s BIG LOGO Oversize</div>
+    <div class="window-body">
+      <div class="carousel" data-window="oversize">
+        <!-- slides: 2 imágenes + 1 video (reemplazá rutas) -->
+        <div class="slide"><img src="assets/oversize-1.jpg" alt="Oversize - 1"></div>
+        <div class="slide"><img src="assets/oversize-2.jpg" alt="Oversize - 2"></div>
+        <div class="slide"><video src="assets/oversize-video.mp4" playsinline muted loop></video></div>
+
+        <button class="nav prev" aria-label="Anterior">‹</button>
+        <button class="nav next" aria-label="Siguiente">›</button>
+      </div>
+
+      <div class="controls">
+        <label>Talle
+          <select class="size-select">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </label>
+        <button class="btn-whatsapp">Pedir por WhatsApp</button>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+<!-- END: Ventanas de remeras -->
 
         <!-- Barra de tareas -->
 <div id="taskbar">
