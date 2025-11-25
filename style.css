@@ -488,4 +488,58 @@ window.onclick = function(event) {
   #remeras-desktop { display:block; padding-bottom: 20px; }
   .remera-window:nth-child(1), .remera-window:nth-child(2) { left: auto; right: auto; top: auto; }
 }
+/* Ventana Windows 95 */
+.win95-window {
+  width: 380px;
+  background: #c0c0c0;
+  border: 2px solid #000;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  padding: 0;
+  position: fixed;
+  top: 120px;
+  left: 60px;
+  box-shadow: 4px 4px 0 #00000055;
+  font-family: "MS Sans Serif", Arial, sans-serif;
+}
+
+/* Titlebar */
+.win95-titlebar {
+  background: linear-gradient(to bottom, #000080, #000060);
+  color: white;
+  padding: 3px 6px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+/* Botones clásicos */
+.title-buttons button {
+  width: 20px;
+  height: 18px;
+  margin-left: 3px;
+  font-size: 12px;
+  border: 1px solid #000;
+  background: #c0c0c0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.title-buttons button:active {
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-bottom-color: #000;
+  border-right-color: #000;
+}
+
+/* Capa interior con borde hundido */
+.win95-inner {
+  border: 2px solid #fff;
+  border-bottom-color: #808080;
+  border-right-color: #808080;
+  background: #e0e0e0;
+  padding: 12px;
+}
 
