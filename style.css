@@ -362,3 +362,130 @@ window.onclick = function(event) {
         margin: 10px auto;  /* Centramos el icono si es necesario */
     }
 }
+/* Ventanas estilo Windows */
+#remeras-desktop { position: relative; width: 100%; pointer-events: auto; }
+
+/* layout: dos ventanas separadas */
+.remera-window {
+  width: 360px;
+  background: linear-gradient(#eaf2ff, #cfdcff);
+  border: 2px solid #0a3a7a;
+  box-shadow: 6px 6px 0 rgba(0,0,0,0.15);
+  border-radius: 6px;
+  position: fixed;
+  z-index: 50;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* ubicación: una a la izq, otra a la der */
+.remera-window:nth-child(1) { left: 40px; top: 120px; }
+.remera-window:nth-child(2) { right: 40px; top: 120px; }
+
+/* titlebar */
+.remera-window .titlebar {
+  background: linear-gradient(#0b63d3,#052b7a);
+  color: #fff;
+  padding: 8px 10px;
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+/* body */
+.remera-window .window-body {
+  padding: 10px;
+  background: #f3f8ff;
+}
+
+/* carousel container */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border: 2px solid #c6d9ff;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* slides */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .35s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img,
+.slide video {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* visible slide */
+.slide.active { opacity: 1; position: relative; }
+
+/* nav */
+.carousel .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(6,30,78,0.9);
+  color: #fff;
+  border: none;
+  width: 30px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 36px;
+  border-radius: 4px;
+  opacity: 0.95;
+}
+
+.carousel .nav.prev { left: 6px; }
+.carousel .nav.next { right: 6px; }
+
+/* controls area */
+.controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls label { font-size: 13px; color: #13306a; }
+.controls select {
+  margin-left: 8px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: 1px solid #b6c9ff;
+  background: #fff;
+}
+
+.btn-whatsapp {
+  background: linear-gradient(#2ecc71,#28b463);
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .remera-window { position: static; width: 90%; margin: 12px auto; box-shadow: none; }
+  #remeras-desktop { display:block; padding-bottom: 20px; }
+  .remera-window:nth-child(1), .remera-window:nth-child(2) { left: auto; right: auto; top: auto; }
+}
+
