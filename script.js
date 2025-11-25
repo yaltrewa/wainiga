@@ -83,5 +83,88 @@ coverIcon.addEventListener('click', () => {
     // Llamamos a la función para mostrar el modal con la imagen
     showModal(imageContent);
 });
+document.addEventListener('DOMContentLoaded', function () {
 
+  // Inicializa todos los carruseles
+  document.querySelectorAll('.remera-window').forEach(initWindow);
+
+  function initWindow(winEl) {
+    const modelName = winEl.getAttribute('data-model') || 'Remera';
+    const carousel = winEl.querySelector('.carousel');
+    const slides = Array.from(carousel.querySelectorAll('.slide'));
+    const prevBtn = carousel.querySelector('.nav.prev');
+    const nextBtn = carousel.querySelector('.nav.next');
+    const sizeSelect = winEl.querySelector('.size-select');
+    const whatsappBtn = winEl.querySelector('.btn-whatsapp');
+
+    let current = 0;
+    const total = slides.length;
+
+    // show first
+    showSlide(current);
+
+    // nav
+    prevBtn.addEventListener('click', () => { goTo(current - 1); });
+    nextBtn.addEventListener('click', () => { goTo(current + 1); });
+
+    // arrow keys for focused carousel (optional)
+    carousel.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') goTo(current - 1);
+      if (e.key === 'ArrowRight') goTo(current + 1);
+    });
+
+    function goTo(idx) {
+      const nextIndex = (idx + total) % total;
+      if (nextIndex === current) return;
+      hideSlide(current);
+      showSlide(nextIndex);
+      current = nextIndex;
+    }
+
+    function showSlide(i) {
+      const s = slides[i];
+      s.classList.add('active');
+
+      // if contains a video element, play it
+      const v = s.querySelector('video');
+      if (v) {
+        // ensure muted autoplay works on browsers
+        v.muted = true;
+        v.loop = true;
+        v.play().catch(()=>{ /* autoplay blocked */ });
+      }
+    }
+
+    function hideSlide(i) {
+      const s = slides[i];
+      s.classList.remove('active');
+      const v = s.querySelector('video');
+      if (v) {
+        v.pause();
+        v.currentTime = 0;
+      }
+    }
+
+    // autoplay slides (optional)
+    let autoplayInterval = setInterval(() => {
+      goTo(current + 1);
+    }, 4200);
+
+    // pause autoplay on hover
+    carousel.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+    carousel.addEventListener('mouseleave', () => {
+      clearInterval(autoplayInterval);
+      autoplayInterval = setInterval(() => goTo(current + 1), 4200);
+    });
+
+    // WhatsApp button
+    whatsappBtn.addEventListener('click', () => {
+      const talle = sizeSelect.value || 'M';
+      const mensaje = `Hola, quiero la Remera ${modelName} en talle ${talle}. ¿Está disponible?`;
+      const url = 'https://wa.me/?text=' + encodeURIComponent(mensaje);
+      window.open(url, '_blank');
+    });
+  }
+
+});
 
